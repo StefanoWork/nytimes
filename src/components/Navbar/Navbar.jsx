@@ -74,7 +74,7 @@ export default function Navbar() {
             </div>
             {isHovered  && (                       
                 <div 
-                    className='bg-white h-60 mt-2 shadow-lg w-screen -mx-[9%] absolute z-10'
+                    className='bg-white h-[200px] mt-2 shadow-lg w-screen -mx-[9%] absolute z-10'
                     onMouseEnter={() => {
                         if (timeoutIdRef.current) 
                         {
@@ -93,7 +93,7 @@ export default function Navbar() {
                         )}
                         <div className='w-[30%]'>
                             <div className='text-sm text-gray-600 '>{hoveredSection.titleSub}</div>
-                            <ul className='grid grid-cols-2 md:grid-cols-2'>
+                            <ul className='grid grid-cols-3 '>
                                 {hoveredSection.subsection.map((item, index) => (
                                     <a 
                                         key={index} 
