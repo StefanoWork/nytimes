@@ -36,9 +36,9 @@ export default function ListArticles({articles}) {
                     const noBy = article.byline.replace(/^by\s+/i, '');
 
                         return (
-                            <Link href={article.url}>
+                            <Link href={article.url} key={index}>
                                 <div className='sm:w-[75%]' >
-                                    <div className="sm:mb-6 mb-2 flex" key={index}>
+                                    <div className="sm:mb-6 mb-2 flex">
                                         <p className='hidden sm:flex w-[18%] text-sm text-gray-500 dark:text-white'>{formattedDate}</p>                       
 
                                         <div className='sm:ml-2 sm:w-[60%] w-[50%]'>
