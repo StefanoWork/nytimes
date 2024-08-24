@@ -111,7 +111,7 @@ export default function Hero() {
             <div className='relative flex flex-row items-center mt-4 w-full justify-between '>
                 <div className='hidden lg:block'>
                     <p className='text-sm mb-1'>{getCurrentDate()}</p>
-                    <p className='text-sm'>Today's Paper</p>
+                    <p className='text-sm'>Today&apos;s Paper</p>
                 </div>
                 <button className='lg:hidden' onClick={handleNavbar}>
                      <RxHamburgerMenu/>
