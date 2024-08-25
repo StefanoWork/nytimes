@@ -21,10 +21,6 @@ const fetchedSections = useRef(new Set());
             }
         };
         fetchArticles();
-
-        return () => {
-            console.log("Component unmounted with section:", section);
-        };
     }, [section]);
 
     return articles;

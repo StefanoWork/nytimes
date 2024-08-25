@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { SearchProvider } from "../../../contexts/SearchContext";
 import Navbar from "../../../components/NavbarSection/Navbar"
 import SectionBig from "../../../components/SectionBig/Section"

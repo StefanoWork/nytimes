@@ -37,7 +37,7 @@ export default function ListArticles({articles}) {
 
                         return (
                             <Link href={article.url} key={index}>
-                                <div className='sm:w-[75%]' key={index} >
+                                <div className='lg:w-[75%] w-[100%]' key={index} >
                                     <div className="sm:mb-6 mb-2 flex">
                                         <p className='hidden sm:flex w-[18%] text-sm text-gray-500 dark:text-white'>{formattedDate}</p>                       
 
@@ -51,11 +51,11 @@ export default function ListArticles({articles}) {
 
                                         {article.multimedia != null && (
                                             <Image 
-                                            className="ml-4 object-contain w-[50%] sm:w-full" 
-                                            width={200} 
-                                            height={250}
-                                            src={article?.multimedia[1]?.url} 
-                                            alt={article?.multimedia[0]?.caption}
+                                                className="ml-4 object-contain w-[50%] sm:w-full" 
+                                                width={200} 
+                                                height={250}
+                                                src={article?.multimedia[1]?.url} 
+                                                alt={article?.multimedia[0]?.caption}
                                             />
                                         )}                               
                                     </div>
@@ -77,7 +77,7 @@ export default function ListArticles({articles}) {
 
                     return (
                         <Link href={article.url} key={index}>
-                            <div className='w-[75%]' key={index} >
+                            <div className='lg:w-[75%] w-full' key={index} >
                                 <div className=" mb-6 flex" >
                                     <div className='w-[12%]'>                        
                                     <p className='text-sm text-gray-500 dark:text-white'>{formattedDate}</p>

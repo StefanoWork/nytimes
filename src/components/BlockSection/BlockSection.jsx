@@ -17,7 +17,6 @@ export default function BlockSection({section}) {
         if(articles.length > 0) {
             const tryIndex = () => {
                 let newIndex = index;
-                console.log("Initial index:", index);
                 while (articles[index].multimedia === null || articles[newIndex]?.multimedia === undefined) {
                     newIndex++;
                 }
@@ -29,7 +28,7 @@ export default function BlockSection({section}) {
         }
     }, [articles, index]);
 
-    //Capire se lo schermo è mobile
+    //Dimensioni schermo
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 640);
